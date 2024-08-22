@@ -44,7 +44,6 @@ def book_word_count(text: str):
     """
     takes in text and returns the word count
     """
-
     words = text.split()
     return len(words)
 
@@ -53,7 +52,6 @@ def character_counter(text: str):
     """
     takes in text, and counts how many times characters appeared in it
     """
-
     char_count = {}
     lowercase = text.lower()
     for l in lowercase:
@@ -68,24 +66,21 @@ def convert_dict(table: dict[str, int]):
     """
     takes in text, and counts how many times characters appeared in it
     """
-
     char_list = [{"key": key, "value": value} for key, value in table.items()]
     return char_list
 
 
 def sort_dict(table):
     """
-    takes in text, and counts how many times characters appeared in it
+    function used for sorting the dictionary list
     """
-
     return table["value"]
 
 
 def print_report(word_count: int, dict_list: list):
     """
-    takes in text, and counts how many times characters appeared in it
+    prints report on letter count findings
     """
-
     print("--- Begin report of books/frankenstein.txt ---")
     print(f"{word_count} words found in the document")
     print()
